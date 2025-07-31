@@ -10,3 +10,5 @@ spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.format_sql=true
 spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
 
+jwt.secret=CAMBIA_ESTA_CLAVE_POR_ALGO_SEGURO
+jwt.expiration=3600000

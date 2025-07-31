@@ -32,9 +32,6 @@ public class TratadorDeErrores {
 
         return ResponseEntity.badRequest().body(errores);
     }
-
-    // Error 400: errores de validación por ConstraintViolation (por ejemplo en servicios o @PathVariable/@RequestParam)
-    @ExceptionHandler(ConstraintViolationException.class)
     public ResponseEntity<Map<String, String>> tratarConstraintViolations(ConstraintViolationException ex) {
         Map<String, String> errores = new HashMap<>();
 
